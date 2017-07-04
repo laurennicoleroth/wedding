@@ -39,15 +39,9 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
+    <section id="peristyle" class="intro-section parallax">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#rsvp">Click Me to Scroll Down!</a>
-                </div>
-            </div>
+          <img id="marquee" src="/assets/marquee.svg"/>
         </div>
     </section>
 
@@ -55,9 +49,11 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
-                </div>
+                <div class="col-md-12" data-scroll-reveal="enter after 0.3s" data-sr-id="1" style="-webkit-transform: translateundefined(0);transform: translateundefined(0);opacity: 1;-webkit-transition: -webkit-transform 0.5s ease-out 0.3s,  opacity 0.5s ease-out 0.3s;transition: transform 0.5s ease-out 0.3s, opacity 0.5s ease-out 0.3s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-sr-initialized="true">
+                            <h3>On the 21st of April, 2018 <br> <strong>Lauren Nicole Roth &amp; Steven Gregory Harms</strong> <br>
+will wed in New Orleans, LA</h3>
+<img src="assets/img/knot-05.png" id="knot" width="100" data-pin-nopin="true">
+                        </div>
             </div>
         </div>
     </section>
