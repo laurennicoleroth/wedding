@@ -15,4 +15,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jqueryeasing
+//= require scrolling-nav
 //= require_tree .
