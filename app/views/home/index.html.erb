@@ -1,4 +1,14 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<script>
+$(function(){
+// $.firefly();
+});
+$.firefly({
+total:    50,   // anything over a few hundred is gonna crawl
+boundary: 0,  // avoid the edge of the window
+fast:     0.5,    // fastest spark (a lower number is faster)
+});
+</script>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -12,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Lauren & Steven</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Lauren&Steven</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,4 +90,7 @@ will wed in New Orleans, LA</h3>
             </div>
         </div>
     </section>
+    <footer><!--<a data-scroll href="#coming-soon" id="go-top" class="btn btn-round notification" data-scroll-reveal="enter bottom move 35px, after 0.6s">
+<i class="fa fa-caret-up fa-2x"></i>
+</a> --></footer>
 </body>
