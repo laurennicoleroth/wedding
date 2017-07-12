@@ -1,10 +1,12 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <script>
-    $.firefly({
+$.firefly({
         total:    50,   // anything over a few hundred is gonna crawl
         boundary: 20,  // avoid the edge of the window
         fast:     0.5,    // fastest spark (a lower number is faster)
-    });
+});
+
+$('.owl-carousel').owlCarousel();
 </script>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -72,19 +74,18 @@
         </div>
     </div>
 
-    <!-- <div class="separator  small center  " style="border-color: #ffffff;margin-top:10px;margin-bottom:29px;border-style: solid"></div> -->
-
     <div class="wpb_text_column wpb_content_element ">
         <div class="wpb_wrapper">
             <h4 class="wekeepit_smpl">Wedding of</h4>
-<h4 class="hmtxt_perfection hd_perf">Lauren &amp; Steven</h4>
-<h4 class="hmtxt_only hd_only">2018.04.21</h4>
-
+            <h4 class="hmtxt_perfection hd_perf">Lauren &amp; Steven</h4>
+            <h4 class="hmtxt_only hd_only">2018.04.21</h4>
         </div>
     </div> </div>
-    </section>
-    <section>
-    <div class="owl-carousel">
+</div>
+</section>
+
+<section>
+ <div class="owl-carousel">
   <div class="item">
     <div class="text">
       <h1>Headline 1</h1>
