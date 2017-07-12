@@ -1,13 +1,10 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <script>
-$(function(){
-// $.firefly();
-});
-$.firefly({
-total:    50,   // anything over a few hundred is gonna crawl
-boundary: 0,  // avoid the edge of the window
-fast:     0.5,    // fastest spark (a lower number is faster)
-});
+    $.firefly({
+        total:    50,   // anything over a few hundred is gonna crawl
+        boundary: 20,  // avoid the edge of the window
+        fast:     0.5,    // fastest spark (a lower number is faster)
+    });
 </script>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -22,7 +19,7 @@ fast:     0.5,    // fastest spark (a lower number is faster)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Lauren&Steven</a>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,9 +47,33 @@ fast:     0.5,    // fastest spark (a lower number is faster)
 
     <!-- Intro Section -->
     <section id="peristyle" class="intro-section parallax">
-        <div class="container">
-          <img id="marquee" src="<%= asset_path('marquee.svg') %>"/>
+    <!--     <div class="container">
+            <div class="bs-docs-example">
+    <section class="sample" id="nietzsche">
+    <section class="text">
+        <h1><span>Wedding Of<br></span> Lauren <span class="kern">&</span> Steven</h1>
+        <h2><span>2018-04-21</span></h2>
 
+    </section>
+</div> -->
+<div class="edgt_elements_item_content edgt_elements_inner_1875079524" style="text-align:center;">
+    <!--<div class="separator hmpg_wekeepit_septop transparent center  " style="margin-bottom:0px"></div> -->
+
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <h4 class="cat_serv"><span>New Orleans, LA</span></h4>
+
+        </div>
+    </div> <div class="separator  small center  " style="border-color: #ffffff;margin-top:10px;margin-bottom:29px;border-style: solid"></div>
+
+    <div class="wpb_text_column wpb_content_element ">
+        <div class="wpb_wrapper">
+            <h4 class="wekeepit_smpl">Wedding of</h4>
+<h4 class="hmtxt_perfection hd_perf">Lauren &amp; Steven</h4>
+<h4 class="hmtxt_only hd_only">2018.04.21</h4>
+
+        </div>
+    </div> </div>
         </div>
     </section>
 
