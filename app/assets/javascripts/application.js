@@ -16,6 +16,5 @@
 //= require turbolinks
 //= require jqueryeasing
 //= require firefly
-//= require along
 //= require scrolling-nav
 //= require_tree .
