@@ -125,7 +125,8 @@
       </div><!-- container -->
     </div><!-- section -->
 
-    <div class="section section-dates parallax-window" id="ceremony" data-parallax="scroll" data-image-src="assets/img/dates-bg.jpg">
+    <div class="section section-dates parallax-window" id="ceremony" data-parallax="scroll" data-image-src="<%= asset_path('dates-bg.jpg') %>">
+
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -165,7 +166,8 @@
     </div><!-- section-story -->
 
     <!-- <div class="section section-gallery parallax-window" id="gallery" data-parallax="scroll" data-image-src="assets/img/gallery-bg.jpg"> -->
-    <div class="section section-gallery" id="gallery" data-parallax="scroll" data-image-src="assets/img/gallery-bg.jpg">
+    <div class="section section-gallery" id="gallery" data-parallax="scroll" data-image-src="<%= asset_path('gallery-bg.jpg') %>">
+
       <div class="overlay overlay-light"></div>
       <div class="container text-center">
         <div class="row">
@@ -254,7 +256,7 @@
     </script>
     <!-- Maps Section Ends Here-->
 
-    <div class="section section-rspv" id="rsvp" style="background-image: url('assets/img/pw_maze_white.png');">
+    <div class="section section-rspv" id="rsvp" style='background-image: url("<%= asset_path('pw_maze_white.png') %>");'>
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
@@ -292,7 +294,7 @@
 
     <div class="footer">
       <div class="container text-center">
-        <p>&copy; 2017 - Lovin theme - Designed by <a href="#">Webmaddy</a></p>
+        <p>&copy; 2017 - Developed by the Bride</p>
       </div><!-- container -->
     </div><!-- footer -->
 
@@ -310,6 +312,7 @@
     <!-- back to top -->
     <a href="#" id="back-to-top">
       <img src="assets/img/top-icon.png">
+      <img src="<%= asset_path('top-icon.png') %>">
     </a>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
