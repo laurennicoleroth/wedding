@@ -143,13 +143,15 @@ a,
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover {
-  background-color: #4c112d;
+  border: 1px solid white;
+  background-color: goldenrod;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #4c112d;
+  background-color: goldenrod;
+  border: 1px solid white;
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
