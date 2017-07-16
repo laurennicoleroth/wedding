@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand visible-xs" href="#">Lovin</a>
+          <a class="navbar-brand visible-xs" href="#">Lauren & Steven 2018</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -172,38 +172,50 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="wow fadeInDown">Gallery</h1>
-            <div class="sub-title wow fadeInDown">Moments we have spent togather</div>
+            <h1 class="wow fadeInDown">Our Story</h1>
+            <div class="sub-title wow fadeInDown">Important Moments In Our 12 Years Together</div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="assets/img/gallery/img1.jpg" class="photo wow fadeInUp">
-              <img src="assets/img/gallery/img1_thumb.jpg" class="img-responsive">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="assets/img/gallery/img2.jpg" data-wow-delay="0.5s" class="photo wow fadeInUp">
-              <img src="assets/img/gallery/img2_thumb.jpg" class="img-responsive">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="assets/img/gallery/img3.jpg" data-wow-delay="1s" class="photo wow fadeInUp">
-              <img src="assets/img/gallery/img3_thumb.jpg" class="img-responsive">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="assets/img/gallery/img4.jpg" class="photo wow fadeInUp">
-              <img src="assets/img/gallery/img4_thumb.jpg" class="img-responsive">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="assets/img/gallery/img5.jpg" data-wow-delay="0.5s" class="photo wow fadeInUp">
-              <img src="assets/img/gallery/img5_thumb.jpg" class="img-responsive">
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <a href="assets/img/gallery/img6.jpg" data-wow-delay="1s" class="photo wow fadeInUp">
-              <img src="assets/img/gallery/img6_thumb.jpg" class="img-responsive">
-            </a>
+          <div class="col-md-12">
+            <div class="wow fadeInDown">
+              <div id="carousel-example" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example" data-slide-to="1"></li>
+    <li data-target="#carousel-example" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img src="<%= asset_path('bridgeday.jpg') %>"/></a>
+      <div class="carousel-caption">
+        <h3>2005</h3>
+        <p>Our Special Date: Crepes in San Francisco then a walk across the Golden Gate Bridge. We stopped, mid-repartee, and could not see either end of the bridge because it was so foggy. Somehow by the time we made it to Marin at the other side of the bridge we knew we were meant to be together.</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="<%= asset_path('austin.jpg') %>"/></a>
+      <div class="carousel-caption">
+        <h3>2006</h3>
+        <p>We moved to Austin, TX.</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="<%= asset_path('groom.jpg') %>"" /></a>
+      <div class="carousel-caption">
+        <h3>Meow</h3>
+        <p>Just Kitten Around</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+            </div>
           </div>
         </div>
       </div>
