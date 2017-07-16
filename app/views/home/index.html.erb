@@ -1,10 +1,10 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <script>
-    $.firefly({
-        total:    50,   // anything over a few hundred is gonna crawl
-        boundary: 20,  // avoid the edge of the window
-        fast:     0.5,    // fastest spark (a lower number is faster)
-    });
+    // $.firefly({
+    //     total:    50,   // anything over a few hundred is gonna crawl
+    //     boundary: 20,  // avoid the edge of the window
+    //     fast:     0.5,    // fastest spark (a lower number is faster)
+    // });
 </script>
 
 <body id="body">
@@ -38,7 +38,7 @@
     </nav>
 
     <!-- header -->
-    <header style='background-image: url("<%= asset_path('peristyle.jpg') %>");' id="peristyle">
+    <header id="peristyle">
       <div class="overlay"></div>
       <div class="container">
         <div class="intro-content">
@@ -166,7 +166,7 @@
     </div><!-- section-story -->
 
     <!-- <div class="section section-gallery parallax-window" id="gallery" data-parallax="scroll" data-image-src="assets/img/gallery-bg.jpg"> -->
-    <div class="section section-gallery" id="gallery" data-parallax="scroll" data-image-src="<%= asset_path('gallery-bg.jpg') %>">
+    <div class="section section-gallery" id="gallery" data-parallax="scroll" data-image-src="<%= asset_path('peristyle.jpg') %>">
 
       <div class="overlay overlay-light"></div>
       <div class="container text-center">
