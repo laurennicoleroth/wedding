@@ -226,13 +226,13 @@
           </div><!-- col-12 -->
           <div class="gift-partner">
             <div class="col-md-4 col-sm-4 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/img/amazon.png" class="img-responsive"></a>
+              <a href="#"><img src="<%= asset_path('amazon.png')%>" class="img-responsive"></a>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-6 wow fadeInDown">
-              <a href="#"><img src="assets/img/bed-bath-beyond.png" class="img-responsive"></a>
+              <a href="#"><img src="<%= asset_path('zola.png')%>" class="img-responsive"></a>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp">
-              <a href="#"><img src="assets/img/planet-eves.png" class="img-responsive"></a>
+              <a href="#"><img src="<%= asset_path('surlatable.png')%>" class="img-responsive"></a>
             </div>
           </div><!-- gift partner -->
         </div><!-- row -->
@@ -244,16 +244,34 @@
     </div><!-- section-map -->
     <script>
       function initMap() {
-        var uluru = {lat: 22.5463202, lng: 88.3608178};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uluru,
-          styles: [{"stylers":[{"hue":"#ff61a6"},{"visibility":"on"},{"invert_lightness":true},{"saturation":40},{"lightness":10}]}]
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
+        var locations = [
+      ['Peristyle', 29.9851959, -90.0995926, 1],
+      ['Cabildo', 29.9577125,-90.0660735, 2]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: new google.maps.LatLng(29.9577125,-90.0660735),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
       }
     </script>
     <script async defer
