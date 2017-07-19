@@ -74,13 +74,13 @@ a,
   padding: 8px 30px;
 }
 .btn-primary {
-  background-color: #555555;
-  border-color: #751a46;
+  background-color: goldenrod;
+  border-color: white;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #751a46;
-  border-color: #60163a;
+  background-color: gold;
+  border-color: white;
 }
 .overlay {
   position: absolute;
@@ -455,11 +455,11 @@ textarea.error {
 .footer {
   font-size: 12px;
   background-color: #555555;
-  color: #dd659f;
+  color: white;
 }
 .footer p {
   margin-top: 15px;
 }
 .footer a {
-  color: #dd659f;
+  color: white;
 }

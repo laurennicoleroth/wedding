@@ -100,8 +100,7 @@
               <div class="media-body text-right">
                 <div class="title">The Groom</div>
                 <h2 class="media-heading">Steven Harms</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>"Before we met I thought 'this guy is out of my league,' but wanted to go for it and meet him anyway. When I first saw Steven, I thought to myself, 'where is his wife.' There exists nobody more caring, tender, intelligent, or more prone to weird, wacky and interesting conversation than Steven. He is patient and curious, and my favorite companion in life." -- Lauren</p>
               </div>
               <div class="media-right">
                 <img class="media-object" src="<%= asset_path('groom.jpg') %>" alt="...">
@@ -245,33 +244,33 @@
     <script>
       function initMap() {
         var locations = [
-      ['Peristyle', 29.9851959, -90.0995926, 1],
-      ['Cabildo', 29.9577125,-90.0660735, 2]
-    ];
+          ['Ceremony: Peristyle, 42 Dreyfous Dr, New Orleans, LA 70124', 29.9851959, -90.0995926, 1],
+          ['Reception: Cabildo, 701 Chartres St, New Orleans, LA 70130', 29.9577125,-90.0660735, 2]
+        ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
-      center: new google.maps.LatLng(29.9577125,-90.0660735),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: new google.maps.LatLng(29.9577125,-90.0660735),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
 
-    var infowindow = new google.maps.InfoWindow();
+        var infowindow = new google.maps.InfoWindow();
 
-    var marker, i;
+        var marker, i;
 
-    for (i = 0; i < locations.length; i++) {
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
+        for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map
+          });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              infowindow.setContent(locations[i][0]);
+              infowindow.open(map, marker);
+            }
+          })(marker, i));
         }
-      })(marker, i));
-    }
       }
     </script>
     <script async defer
@@ -284,7 +283,7 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
           <h1 class="text-center wow fadeInDown">Are you attending?</h1>
-          <div class="sub-title text-center wow fadeInDown">We look forword to seeing you</div>
+          <div class="sub-title text-center wow fadeInDown">We look forword to seeing you April 21, 2018</div>
             <form id="rsvpForm" class="form wow fadeIn">
               <div class="row">
                 <div class="col-md-6">
@@ -297,6 +296,11 @@
                     <input type="email" name="guestEmail" id="guestEmail" class="form-control" placeholder="Your email *">
                   </div>
                 </div><!-- col 6 -->
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea name="guestAddress" id="guestAddress" class="form-control" placeholder="Your address *"></textarea>
+                  </div>
+                </div><!-- col 12 -->
                 <div class="col-md-12">
                   <div class="form-group">
                     <textarea name="guestMessage" id="guestMessage" class="form-control" placeholder="Your message *"></textarea>
