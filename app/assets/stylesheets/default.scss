@@ -149,6 +149,11 @@ a,
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
+
+.navbar-inverse .navbar-nav > li > a {
+  border: 1px solid transparent;
+}
+
 .navbar-inverse .navbar-nav > li > a:hover {
   background-color: goldenrod;
   border: 1px solid white;
