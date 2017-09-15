@@ -17,22 +17,6 @@ $(document).ready(function(){
 
 });
 
-// RSVP Form - jquery validation
-$("#rsvpForm").validate({
-  rules: {
-    guestName: {
-      required: true
-    },
-    guestEmail: {
-      required: true
-    },
-    guestMessage: {
-      required: true
-    }
-  }
-});
-
-
 // wow
 new WOW({
     offset: 50
