@@ -12,11 +12,10 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
+//= require jquery.blueimp-gallery.min
 //= require jquery_ujs
 //= require turbolinks
 //= require jqueryeasing
-//= require default
-//= require contact
 //= require firefly
 //= require scrolling-nav
 //= require_tree .
