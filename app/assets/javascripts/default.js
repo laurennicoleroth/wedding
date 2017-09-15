@@ -15,8 +15,6 @@ $(document).ready(function(){
       event.preventDefault();
   });
 
-  //parallax
-  $('.parallax-window').parallax();
 });
 
 // RSVP Form - jquery validation
