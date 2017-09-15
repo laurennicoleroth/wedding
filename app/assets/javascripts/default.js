@@ -17,11 +17,6 @@ $(document).ready(function(){
 
 });
 
-// wow
-new WOW({
-    offset: 50
-}).init();
-
 // Back to Top
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
