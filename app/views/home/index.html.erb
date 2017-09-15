@@ -1,19 +1,5 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<script>
-    $.firefly({
-        total:    50,   // anything over a few hundred is gonna crawl
-        boundary: 20,  // avoid the edge of the window
-        fast:     0.5,    // fastest spark (a lower number is faster)
-    });
-</script>
 
-<body id="body">
-  <div class="se-pre-con"></div>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <%= render "navigation" %> 
-    </div>
-  </nav>
   <%= render "peristyle_header" %>
   <%= render "parents_section" %>
   <div class="lead text-center">
@@ -223,7 +209,7 @@ function initMap() {
 
   <div class="footer">
     <div class="container text-center">
-      <p>&copy; 2017 - Developed by the Bride</p>
+      <p>&copy; 2017 - Developed by the Bride &amp; Groom</p>
     </div><!-- container -->
   </div><!-- footer -->
 
@@ -256,4 +242,3 @@ function initMap() {
   <script src="assets/plugins/sscr.js"></script>
   <script src="assets/js/default.js"></script>
   <script src="assets/js/contact.js"></script>
-</body>

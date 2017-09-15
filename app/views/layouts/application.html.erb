@@ -22,7 +22,32 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   </head>
 
-  <body>
+<body id="body">
+  <div class="se-pre-con"></div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <%= render "shared/navigation" %>
+    </div>
+  </nav>
+    <% if @error_messages && !@error_messages.empty? %>
+      <div id="error-block" style="margin-top: 50px; padding: 2em 1em;">
+          <div>
+            <p class="error-text">Please fix the following in your registration</p>
+            <ul>
+              <% @error_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      </div>
+    <% end %>
     <%= yield %>
+    <script>
+      $.firefly({
+        total:    50,   // anything over a few hundred is gonna crawl
+        boundary: 20,  // avoid the edge of the window
+        fast:     0.5,    // fastest spark (a lower number is faster)
+      });
+    </script>
   </body>
 </html>
