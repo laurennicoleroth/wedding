@@ -11,86 +11,20 @@
   <div class="se-pre-con"></div>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand visible-xs" href="#">Lauren & Steven 2018</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a class="scrollto" href="#welcome">Welcome</a>
-            </li>
-            <li><a class="scrollto" href="#ceremony">Ceremony</a></li>
-            <li><a class="scrollto" href="#story">Our Story</a></li>
-            <li><a class="scrollto" href="#gallery">Gallery</a></li>
-            <li><a class="scrollto" href="#registries">Registries</a></li>
-            <li><a class="scrollto" href="#rsvp">RSVP</a></li>
-            <li><a class="scrollto" href="https://wrapbootstrap.com/theme/lovin-wedding-invitation-template-WB0J08195" target="_blank">Buy Now</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    <!-- header -->
-    <header id="peristyle">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="intro-content">
-          <div class="edgt_elements_item_content edgt_elements_inner_1875079524">
-
-    <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-            <h4 class="cat_serv"><span>New Orleans, LA</span></h4>
-
-        </div>
+      <%= render "navigation" %> 
     </div>
-
-    <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-            <h4 class="wekeepit_smpl">Wedding of</h4>
-            <h4 class="hmtxt_perfection hd_perf">Lauren &amp; Steven</h4>
-            <h4 class="hmtxt_only hd_only">2018.04.21</h4>
-        </div>
-    </div> </div>
-        </div><!-- intro-content -->
-      </div><!-- container -->
-    </header>
-
-    <div class="section section-parents">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="parents text-center wow fadeIn">
-              <div class="title">Parents of the Bride</div>
-              <h3>Susan Roth and<br> Robert Roth</h3>
-            </div><!-- parents -->
-          </div><!-- col 4 -->
-          <div class="col-md-6 col-sm-6">
-            <div class="parents text-center wow fadeIn">
-              <div class="title">Parents of the Groom</div>
-              <h3>Dana Kelley and<br> Greg Harms</h3>
-            </div><!-- parents -->
-          </div><!-- col 4 -->
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><!-- section parents -->
-
-    <div class="lead text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            We Cordially invite you to the wedding ceremony
-          </div>
+  </nav>
+  <%= render "peristyle_header" %>
+  <%= render "parents_section" %>
+  <div class="lead text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          We Cordially invite you to the wedding ceremony
         </div>
       </div>
-    </div><!-- lead -->
+    </div>
+  </div><!-- lead -->
 
     <div class="section section-about">
       <div class="container">
@@ -124,32 +58,32 @@
       </div><!-- container -->
     </div><!-- section -->
 
-    <div class="section section-dates parallax-window" id="ceremony" data-parallax="scroll">
+  <div class="section section-dates parallax-window" id="ceremony" data-parallax="scroll">
 
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="dates-info wow fadeIn">
-              <div class="ceremony">Wedding</div>
-              <div class="location">Peristyle, New Orleans, LA</div>
-              <div class="day-month">21 August</div>
-              <div class="year">2018</div>
-              <div class="time">5:00PM</div>
-            </div><!-- dates info -->
-          </div><!-- col 6 -->
-          <div class="col-md-6 col-sm-6">
-            <div class="dates-info wow fadeIn">
-              <div class="ceremony">Reception</div>
-              <div class="location">Cabildo, New Orleans, LA</div>
-              <div class="day-month">21 August</div>
-              <div class="year">2018</div>
-              <div class="time">6:30PM</div>
-            </div><!-- dates info -->
-          </div><!-- col 6 -->
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><!-- section-dates -->
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="dates-info wow fadeIn">
+            <div class="ceremony">Wedding</div>
+            <div class="location">Peristyle, New Orleans, LA</div>
+            <div class="day-month">21 April 2018</div>
+            <div class="year">2018</div>
+            <div class="time">5:00PM</div>
+          </div><!-- dates info -->
+        </div><!-- col 6 -->
+        <div class="col-md-6 col-sm-6">
+          <div class="dates-info wow fadeIn">
+            <div class="ceremony">Reception</div>
+            <div class="location">Cabildo, New Orleans, LA</div>
+            <div class="day-month">21 April 2018</div>
+            <div class="year">2018</div>
+            <div class="time">6:30PM</div>
+          </div><!-- dates info -->
+        </div><!-- col 6 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- section-dates -->
 
     <div class="section section-story" id="story">
       <div class="container">
@@ -164,194 +98,163 @@
       </div><!-- container -->
     </div><!-- section-story -->
 
-    <!-- <div class="section section-gallery parallax-window" id="gallery" data-parallax="scroll" data-image-src="assets/img/gallery-bg.jpg"> -->
-    <div class="section section-gallery" id="gallery" data-parallax="scroll" data-image-src="<%= asset_path('peristyle.jpg') %>">
+  <!-- <div class="section section-gallery parallax-window" id="gallery" data-parallax="scroll" data-image-src="assets/img/gallery-bg.jpg"> -->
+  <div class="section section-gallery" id="gallery" data-parallax="scroll" data-image-src="<%= asset_path('peristyle.jpg') %>">
 
-      <div class="overlay overlay-light"></div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="wow fadeInDown">Gallery</h1>
-            <div class="sub-title wow fadeInDown">Important Moments In Our 12 Years Together</div>
-          </div>
-          <div class="col-md-12">
-            <div class="wow fadeInDown">
-              <div id="carousel-example" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example" data-slide-to="1"></li>
-    <li data-target="#carousel-example" data-slide-to="2"></li>
-  </ol>
+    <div class="overlay overlay-light"></div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="wow fadeInDown">Gallery</h1>
+          <div class="sub-title wow fadeInDown">Important Moments In Our 12 Years Together</div>
+        </div>
+        <div class="col-md-12">
+          <div class="wow fadeInDown">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+                <li data-target="#carousel-example" data-slide-to="2"></li>
+              </ol>
 
-  <div class="carousel-inner">
-    <div class="item active">
-      <a href="#"><img src="<%= asset_path('bridgeday.jpg') %>"/></a>
-      <div class="carousel-caption">
-        <h3>2005</h3>
-        <p>Our Special Date: Crepes in San Francisco then a walk across the Golden Gate Bridge. We stopped, mid-repartee, and could not see either end of the bridge because it was so foggy. Somehow by the time we made it to Marin at the other side of the bridge we knew we were meant to be together.</p>
-      </div>
-    </div>
-    <div class="item">
-      <a href="#"><img src="<%= asset_path('austin.jpg') %>"/></a>
-      <div class="carousel-caption">
-        <h3>2006</h3>
-        <p>We moved to Austin, TX.</p>
-      </div>
-    </div>
-  </div>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <a href="#"><img src="<%= asset_path('bridgeday.jpg') %>"/></a>
+                  <div class="carousel-caption">
+                    <h3>2005</h3>
+                    <p>Our Special Date: Crepes in San Francisco then a walk across the Golden Gate Bridge. We stopped, mid-repartee, and could not see either end of the bridge because it was so foggy. Somehow by the time we made it to Marin at the other side of the bridge we knew we were meant to be together.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <a href="#"><img src="<%= asset_path('austin.jpg') %>"/></a>
+                  <div class="carousel-caption">
+                    <h3>2006</h3>
+                    <p>We moved to Austin, TX.</p>
+                  </div>
+                </div>
+              </div>
 
-  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
+              <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- section-gallery -->
+    </div>
+  </div><!-- section-gallery -->
 
-    <div class="section section-gift" id="registries">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center wow fadeInDown">Gift registries</h1>
-            <div class="sub-title text-center wow fadeInDown">The most important gift to us is to have you share our day.</div>
-            <p class="text-center wow fadeIn">If you do wish to buy us a gift you can check out the registry lists below. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident.</p>
-          </div><!-- col-12 -->
-          <div class="gift-partner">
-            <div class="col-md-4 col-sm-4 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="<%= asset_path('amazon.png')%>" class="img-responsive"></a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 wow fadeInDown">
-              <a href="#"><img src="<%= asset_path('zola.png')%>" class="img-responsive"></a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp">
-              <a href="#"><img src="<%= asset_path('surlatable.png')%>" class="img-responsive"></a>
-            </div>
-          </div><!-- gift partner -->
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><!-- section-gift -->
+  <div class="section section-gift" id="registries">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center wow fadeInDown">Gift registries</h1>
+          <div class="sub-title text-center wow fadeInDown">The most important gift to us is to have you share our day.</div>
+          <p class="text-center wow fadeIn">If you do wish to buy us a gift you can check out the registry lists below.</p>
+        </div><!-- col-12 -->
+        <div class="gift-partner">
+          <div class="col-md-4 col-sm-4 col-xs-6 wow fadeInUp">
+            <a href="#"><img src="<%= asset_path('amazon.png')%>" class="img-responsive"></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 wow fadeInDown">
+            <a href="#"><img src="<%= asset_path('zola.png')%>" class="img-responsive"></a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp">
+            <a href="#"><img src="<%= asset_path('surlatable.png')%>" class="img-responsive"></a>
+          </div>
+        </div><!-- gift partner -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- section-gift -->
 
-    <!-- Maps Section -->
-    <div class="section section-map" id="map">
-    </div><!-- section-map -->
-    <script>
-      function initMap() {
-        var locations = [
-          ['Ceremony: Peristyle, 42 Dreyfous Dr, New Orleans, LA 70124', 29.9851959, -90.0995926, 1],
-          ['Reception: Cabildo, 701 Chartres St, New Orleans, LA 70130', 29.9577125,-90.0660735, 2]
-        ];
+  <!-- Maps Section -->
+  <div class="section section-map" id="map">
+  </div><!-- section-map -->
+  <script>
+function initMap() {
+  var locations = [
+    ['Ceremony: Peristyle, 42 Dreyfous Dr, New Orleans, LA 70124', 29.9851959, -90.0995926, 1],
+    ['Reception: Cabildo, 701 Chartres St, New Orleans, LA 70130', 29.9577125,-90.0660735, 2]
+  ];
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: new google.maps.LatLng(29.9577125,-90.0660735),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: new google.maps.LatLng(29.9577125,-90.0660735),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
 
-        var infowindow = new google.maps.InfoWindow();
+  var infowindow = new google.maps.InfoWindow();
 
-        var marker, i;
+  var marker, i;
 
-        for (i = 0; i < locations.length; i++) {
-          marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-            map: map
-          });
+  for (i = 0; i < locations.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map
+    });
 
-          google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-              infowindow.setContent(locations[i][0]);
-              infowindow.open(map, marker);
-            }
-          })(marker, i));
-        }
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
       }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4sObp-NKD36fvgL5Vy6hxguy60xC9JU&callback=initMap">
-    </script>
-    <!-- Maps Section Ends Here-->
+    })(marker, i));
+  }
+}
+  </script>
+  <script async defer
+                                   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx4sObp-NKD36fvgL5Vy6hxguy60xC9JU&callback=initMap">
+  </script>
+  <!-- Maps Section Ends Here-->
 
-    <div class="section section-rspv" id="rsvp" style='background-image: url("<%= asset_path('pw_maze_white.png') %>");'>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
+  <div class="section section-rspv" id="rsvp" style='background-image: url("<%= asset_path('pw_maze_white.png') %>");'>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
           <h1 class="text-center wow fadeInDown">Are you attending?</h1>
           <div class="sub-title text-center wow fadeInDown">We look forword to seeing you April 21, 2018</div>
-            <form id="rsvpForm" class="form wow fadeIn">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" name="guestName" id="guestName" class="form-control" placeholder="Your name *">
-                  </div>
-                </div><!-- col 6 -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="email" name="guestEmail" id="guestEmail" class="form-control" placeholder="Your email *">
-                  </div>
-                </div><!-- col 6 -->
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea name="guestAddress" id="guestAddress" class="form-control" placeholder="Your address *"></textarea>
-                  </div>
-                </div><!-- col 12 -->
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea name="guestMessage" id="guestMessage" class="form-control" placeholder="Your message *"></textarea>
-                  </div>
-                </div><!-- col 12 -->
-                <div class="col-md-12">
-                  <div id="submitMessage"></div>
-                </div>
-                <div class="col-md-12 text-center">
-                   <a href="javascript:void(0)" id="rsvp-form-submit" class="btn btn-lg btn-primary">I am attending</a>
-                </div>
-              </div><!-- row -->
-            </form>
-          </div>
+          <%= render "address_registration_form" %>
         </div>
       </div>
-    </div><!-- section-rspv -->
-
-    <div class="footer">
-      <div class="container text-center">
-        <p>&copy; 2017 - Developed by the Bride</p>
-      </div><!-- container -->
-    </div><!-- footer -->
-
-    <!-- Gallery -->
-    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-      <div class="slides"></div>
-      <h3 class="title"></h3>
-      <a class="prev">‹</a>
-      <a class="next">›</a>
-      <a class="close">×</a>
-      <a class="play-pause"></a>
-      <ol class="indicator"></ol>
     </div>
+  </div><!-- section-rspv -->
 
-    <!-- back to top -->
-    <a href="#" id="back-to-top">
-      <img src="assets/img/top-icon.png">
-      <img src="<%= asset_path('top-icon.png') %>">
-    </a>
+  <div class="footer">
+    <div class="container text-center">
+      <p>&copy; 2017 - Developed by the Bride</p>
+    </div><!-- container -->
+  </div><!-- footer -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/plugins/jquery-2.2.4.min.js"></script>
-    <script src="assets/plugins/jquery.easing.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/plugins/gallery-2.21.3/js/blueimp-gallery.min.js"></script>
-    <script src="assets/plugins/parallax.js-1.4.2/parallax.min.js"></script>
-    <script src="assets/plugins/wow/dist/wow.min.js"></script>
-    <script src="assets/plugins/jquery-validation-1.15.0/dist/jquery.validate.min.js"></script>
-    <script src="assets/plugins/sscr.js"></script>
-    <script src="assets/js/default.js"></script>
-    <script src="assets/js/contact.js"></script>
-  </body>
+  <!-- Gallery -->
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+
+  <!-- back to top -->
+  <a href="#" id="back-to-top">
+    <img src="assets/img/top-icon.png">
+    <img src="<%= asset_path('top-icon.png') %>">
+  </a>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/plugins/jquery-2.2.4.min.js"></script>
+  <script src="assets/plugins/jquery.easing.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/gallery-2.21.3/js/blueimp-gallery.min.js"></script>
+  <script src="assets/plugins/parallax.js-1.4.2/parallax.min.js"></script>
+  <script src="assets/plugins/wow/dist/wow.min.js"></script>
+  <script src="assets/plugins/jquery-validation-1.15.0/dist/jquery.validate.min.js"></script>
+  <script src="assets/plugins/sscr.js"></script>
+  <script src="assets/js/default.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
